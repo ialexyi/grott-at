@@ -95,10 +95,10 @@ class Conf :
         self.procconf()
         
         #Process environmental variable
-        self.procenv()
+        #self.procenv()
 
         #Process environmental variable to override config and environmental settings
-        self.parserset() 
+        #self.parserset() 
 
         #Prepare invert settings
         self.SN = "".join(['{:02x}'.format(ord(x)) for x in self.inverterid])
